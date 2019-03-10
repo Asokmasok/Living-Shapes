@@ -55,13 +55,6 @@ void draw() {
     if (blue.get(c).prox(red.get(d))) {
       blue.get(c).gravity(red.get(d));
     }
-    if (red.get(d).prox(blue.get(c))) {
-      red.get(d).gravity(blue.get(c));
-    }
-    if (red.get(d).collide(blue.get(c))) {
-      red.remove(d);
-      blue.remove(c);
-    }
     }
   }
 
